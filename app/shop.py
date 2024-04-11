@@ -26,7 +26,7 @@ class Shop:
 
     def issue_receipt(self, customer: Customer) -> None:
         date = datetime.datetime.now()
-        print(f"\nDate: {date.strftime("%d/%m/%Y %H:%M:%S")}"
+        print(f'\nDate: {date.strftime("%d/%m/%Y %H:%M:%S")}'
               f"\nThanks, {customer.name}, for your purchase!"
               f"\nYou have bought:")  # noqa: E231
         for product, amount in customer.product_cart.items():
